@@ -44,3 +44,7 @@ def main():
             fw.write(line)
             fw.write("\n")
     print('finished')
+    
+    
+if __name__ == '__main__':
+    main()
