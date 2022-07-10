@@ -35,7 +35,7 @@ My current team now using FineBI to visualize our data, it reduces manpower cons
 I choose Airflow as the scheduler.
 
 
-## 2. Uploaded file explaination
+## 2. Uploaded file explanation
 1. one script for downloading dataset (step1_extraction.py)
 2. one script for image info calculation (step2_transformation.py), with a xml file for image processing algorithm.
 3. two scripts for data storage & calculation (step3_load_ods.py + step3_load_dwd.py). 
