@@ -27,7 +27,7 @@ In this section, I just performed simple visualization steps by downloading the 
 #### WHAT CAN BE FURTHER DONE
 In practice, visualization is nearly the last few steps in the whole pipeline. There are several ways to achieve the goal, for example, by writing frontend(using Echarts, for example) + backend code, connecting to hive/impala (this is what my previous team did before); the other ways, for example, could be using CSV/XLSX file to directly visualize.
 My current team now using FineBI to visualize our data, it reduces manpower consumption but is constrained by functionalities (since it is an open-to-use tool).
-<br> For further analysis, one can figure the relations between image size and number of faces, for example.
+<br> For further analysis, one can figure out the relations between image size and number of faces, for example.
 
 
 ### 1.5 Schedule
