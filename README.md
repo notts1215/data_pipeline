@@ -23,9 +23,9 @@ In this section, I use Hive to store data and Spark for calculation. In the DWD 
 In ODS script, I iterate the data and insert into ODS layer table; another way of doing this is to create an external table and locate its path, as it will speed up the execution.
 
 ### 1.4 Visualization
-In this section, I just performed simple visualization steps. I downloaded the DWD table from the data warehouse as a CSV file, using Python3 or Microsoft Excel to visualize it. The charts I created are basic the distribution of face numbers detected, and the size of the figure.
+In this section, I just performed simple visualization steps by downloading the DWD table from the data warehouse as a CSV file, using Python3 or Microsoft Excel to visualize it. The charts I created are basic the distribution of face numbers detected, and the size of the figure.
 #### WHAT CAN BE FURTHER DONE
-In practice, visualization is nearly the last step. There are several ways to achieve the goal, for example, by writing frontend + backend code, connecting to hive/impala (this is what my current team did before); the other ways, for example, could be using CSV/XLSX file to directly visualize.
+In practice, visualization is nearly the last few steps in the whole pipeline. There are several ways to achieve the goal, for example, by writing frontend + backend code, connecting to hive/impala (this is what my previous team did before); the other ways, for example, could be using CSV/XLSX file to directly visualize.
 My current team now using FineBI to visualize our data, it reduces manpower consumption but is constrained by functionalities (since it is an open-to-use tool).
 
 ### 1.5 Schedule
