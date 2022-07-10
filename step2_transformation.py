@@ -20,7 +20,7 @@ def main():
 
     # Using Haar
     classfier = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
-    for pics in pic_paths[:1000]:
+    for pics in pic_paths[:1001]:
         image = cv2.imread(pics)
         file_name = os.path.split(pics)[-1].split('.')[0]
         md5 = hashlib.md5(open(pics, 'rb').read()).hexdigest()
