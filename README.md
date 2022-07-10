@@ -6,7 +6,7 @@ Extraction -> Transformation -> Load -> Visualization.
 <br>All scripts are written in Python3, the scheduler used is Airflow.
 
 ### 1.1 Extraction 
-DataSet(image) is from Kaggle. I download+unzip the dataset and put them under a sepcific path of a server, so that the folder contains 1000 images.
+DataSet(image) is from Kaggle. I mocked the download operation (e.g. using url + headers) to download+unzip the dataset and put them under a sepcific path of a server, so that the folder contains 1000 images.
 #### WHAT CAN BE FURTHER DONE
 I believe pulling data from the cloud is more close to PRD in practice.
 <br> Alternatively, scrapy is another doable choice.
@@ -25,5 +25,8 @@ In ODS script, I iterate the data and insert into ODS layer table; another way o
 ### 1.4 Visualization
 In this section, I just performed simple visualization steps. I downloaded the DWD table from the data warehouse as a CSV file, using Python3 or Microsoft Excel to visualize it. The charts I created are basic the distribution of face numbers detected, and the size of the figure.
 #### WHAT CAN BE FURTHER DONE
-In practice, visualization is nearly the last step. There are several ways to achieve the goal, for example, by writing frontend + backend code, connecting to hive/impala (this is what my current team did before); the other ways, for example, could be using CSV file to directly visualize.
+In practice, visualization is nearly the last step. There are several ways to achieve the goal, for example, by writing frontend + backend code, connecting to hive/impala (this is what my current team did before); the other ways, for example, could be using CSV/XLSX file to directly visualize.
 My current team now using FineBI to visualize our data, it reduces manpower consumption but is constrained by functionalities (since it is an open-to-use tool).
+
+### 1.5 Schedule
+I choose Airflow as the scheduler.
