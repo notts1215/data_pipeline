@@ -19,7 +19,7 @@ For this simple scenario, I used default functions in cv2. However, as mentioned
 
 ### 1.3 Load
 In this section, I use Hive to store data and Spark for calculation. In the DWD script, I just simply use the embedded function in Hive and separate the whole JSON value in ODS into columns respectively.
-<br>**Note: This part of code only works on my current company's DEV environment, with settings well configured. As for the detail, please refer to the next section.
+<br>**Note: This part of code only works on my current company's DEV environment (settings already well configured). As for the detail, please refer to the next section.
 #### WHAT CAN BE FURTHER DONE
 The output format from the previous step can be edited to reduce the redundancy of the ODS script (e.g. no need to use an external table as a transition but as the target ODS table).
 
