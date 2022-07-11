@@ -36,13 +36,13 @@ I choose Airflow as the scheduler.
 ## 2. Uploaded file explanation
 1. one script for downloading dataset (step1_extraction.py)
 2. one script for image info calculation (step2_transformation.py), with an XML file for the image processing algorithm.
-<br>2.1 I also uploaded the output after execution, please refer to 'result.json'
+<br>2.1 I also upload the output after execution, please refer to 'result.json'
 3. two scripts for data storage & calculation (step3_load_ods.py + step3_load_dwd.py). 
-<br>3.1 I uploaded the screenshot of ODS&DWD table together with the CSV/XLSX file (ods_table.csv + dwd_table.xlsx).
+<br>3.1 I upload the screenshot of ODS&DWD table together with the CSV/XLSX file (ods_table.csv + dwd_table.xlsx).
 4. one script for visualization (step4_visualization.py)
 <br>4.1 Note that I also uploaded the screenshot of charts generated from 'dwd_table.xlsx' via Microsoft Excel.
 <br>4.2 As mentioned in 1.4, I screenshot a recently finished project on fineBI (with some info blurred), so that you can have a general picture of how it visualizes.
 5. one script for scheduling (step5_schedule.py)
-6. a PDF contains screenshots mentioned.
+6. a PDF contains screenshots mentioned above.
 
 
