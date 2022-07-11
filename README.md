@@ -3,10 +3,10 @@ This pipeline is a simple demonstration of the processing/storage of metadata ob
 
 ## 1. Overall Architecture & Tech Stack used
 Extraction -> Transformation -> Load -> Visualization.
-<br>All scripts are written in Python3, the scheduler used is Airflow.
+<br>All scripts are written in Python3, and the scheduler used is Airflow.
 
 ### 1.1 Extraction 
-DataSet(image) is from Kaggle. I mocked the download operation (using url + headers) to download+unzip the dataset and put them under a sepcific path of a server, and the target path contains 1000 images.
+DataSet(image) is from Kaggle. I mocked the download operation (using URL + headers) to download+unzip the dataset and put them under a specific path of a server, and the target path contains 1000 images.
 #### WHAT CAN BE FURTHER DONE
 I believe pulling data from the cloud is more close to PRD in practice.
 <br> Alternatively, scrapy is another doable choice.
@@ -19,7 +19,7 @@ For this simple scenario, I used default functions in cv2. However, as mentioned
 
 ### 1.3 Load
 In this section, I use Hive to store data and Spark for calculation. In the DWD script, I just simply use the embedded function in Hive and separate the whole JSON value in ODS into columns respectively.
-<br>**Note: This part of code only works on my current company's DEV environment (settings already well configured). As for the detail, please refer to the next section.
+<br>**Note: This part of code only works on my current company's DEV environment (settings already well configured). 
 #### WHAT CAN BE FURTHER DONE
 The output format from the previous step can be edited to reduce the redundancy of the ODS script (e.g. no need to use external table as a transition).
 
@@ -28,7 +28,6 @@ I performed simple visualization steps by downloading the DWD table from the dat
 #### WHAT CAN BE FURTHER DONE
 In practice, visualization is nearly the last few steps in the whole pipeline. There are several ways to achieve the goal, such as writing frontend(using Echarts, for example) + backend code and connecting to hive/impala (this is what my previous team did before); the other ways, for example, could be using CSV/XLSX file to directly visualize. My current team now using FineBI to visualize our data, it reduces manpower consumption but is constrained by functionalities (since it is an open-to-use tool).
 <br> For further analysis of the data, one can figure out the relations between image size and the number of faces, for instance.
-
 
 ### 1.5 Schedule
 I choose Airflow as the scheduler.
