@@ -43,6 +43,6 @@ I choose Airflow as the scheduler.
 <br>4.1 Note that I also uploaded the screenshot of charts generated from 'dwd_table.xlsx' via Microsoft Excel.
 <br>4.2 As mentioned in 1.4, I screenshot a recently finished project on fineBI (with some info blurred), so that you can have a general picture of how it visualizes.
 5. one script for scheduling (step5_schedule.py)
-6. a .docx file contains screenshots mentioned.
+6. a PDF contains screenshots mentioned.
 
 
