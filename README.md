@@ -1,5 +1,5 @@
 # Data Pipeline
-This pipeline is a simple demonstration of the processing/storage of metadata obtained from facial recognation towards ~1000 images.
+This pipeline is a simple demonstration of the processing/storage of metadata obtained from facial recognition towards ~1000 images.
 
 ## 1. Overall Architecture & Tech Stack used
 Extraction -> Transformation -> Load -> Visualization.
