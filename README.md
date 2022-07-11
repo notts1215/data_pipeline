@@ -1,7 +1,7 @@
 # Data Pipeline
 This pipeline is a simple demonstration of the processing/storage of metadata obtained from facial recognation towards ~1000 images.
 
-## 1. Overall Architecture & tech stack used
+## 1. Overall Architecture & Tech Stack used
 Extraction -> Transformation -> Load -> Visualization.
 <br>All scripts are written in Python3, the scheduler used is Airflow.
 
