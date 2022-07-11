@@ -15,7 +15,7 @@ I believe pulling data from the cloud is more close to PRD in practice.
 By utilizing some functions via 'import cv2', one can get basic info from image sets(in this case the dataset under the path defined in step1.1)
 <br>For each image, I calculate its width and height, together with the number of faces detected. Then combine the info with the encrypted value of each image, together with a file name (use either encrypted value or file name as a primary key) into a JSON format string for storage purposes. 
 #### WHAT CAN BE FURTHER DONE
-For this simple scenario, I used default functions in cv2. However, as mentioned in the interview, in practice one can use some new algorithms developed by Mr.Qi and other colleagues to extract more valuable info from an image.
+For this simple scenario, I used default functions in cv2. However, as mentioned in the interview, in practice one can use some new algorithms developed by colleagues to extract more valuable info from an image.
 
 ### 1.3 Load
 In this section, I use Hive to store data and Spark for calculation. In the DWD script, I just simply use the embedded function in Hive and separate the whole JSON value in ODS into columns respectively.
