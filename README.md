@@ -18,7 +18,7 @@ By utilizing some functions via 'import cv2', one can get basic info from image 
 For this simple scenario, I used default functions in cv2. However, as mentioned in the interview, in practice one can use some new algorithms developed by colleagues to extract more valuable info from an image.
 
 ### 1.3 Load
-In this section, I use Hive to store data and Spark for calculation. In the DWD script, I just simply use the embedded function in Hive and separate the whole JSON value in ODS into columns respectively.
+In this section, I use HDFS to store data and Spark for calculation. In the DWD script, I just simply use the embedded function in Hive and separate the whole JSON value in ODS into columns respectively.
 <br>**Note: This part of code only works on my current company's DEV environment (settings already well configured). 
 #### WHAT CAN BE FURTHER DONE
 The output format from the previous step can be edited to reduce the redundancy of the ODS script (e.g. no need to use external table as a transition).
